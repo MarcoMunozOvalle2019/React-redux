@@ -16,13 +16,7 @@ switch (action.type){
     case 'SHOW_MOD': {
         console.log('Mod='+JSON.stringify(action.info))
 //        let encontrado='No encontrado'
-        let encontrado: [
-            {
-              id: 0,
-              name: '0',
-              username: '0'
-            }
-          ]
+        let encontrado: [{id: 0,name: '0',username: '0'}]
         state.info.map((este)=>{
             if(este.name===action.info.name){return encontrado=este}
             return encontrado
